@@ -1,71 +1,100 @@
+/* UNF Ospreys Color Palette */
+:root {
+    --unf-blue: #041E42;
+    --unf-light-blue: #7A99C2;
+    --unf-gray: #D1D3D4;
+    --unf-white: #FFFFFF;
+}
+
+/* Reset Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--unf-white);
     text-align: center;
 }
 
+/* Header */
 header {
-    background: #041E42;
-    color: white;
+    background: var(--unf-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 15px;
+}
+
+.logo img {
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: var(--unf-white);
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
+nav ul li a:hover {
+    color: var(--unf-gray);
+}
+
+/* Hero Section */
 .hero {
+    background: url('images/unf-baseball-bg.jpg') no-repeat center center/cover;
+    color: var(--unf-white);
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.cta-button {
+    background: var(--unf-light-blue);
+    color: var(--unf-white);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.cta-button:hover {
+    background: var(--unf-gray);
+    color: var(--unf-blue);
+}
+
+/* Twitter Feed */
+.twitter-feed {
+    background: var(--unf-white);
     padding: 50px;
-    background: #7A99C2;
-    color: white;
 }
 
-button {
-    padding: 10px 20px;
-    background: #041E42;
-    color: white;
-    border: none;
-    cursor: pointer;
+.twitter-feed h2 {
+    color: var(--unf-blue);
 }
 
-button:hover {
-    background: #D1D3D4;
-}
-
-.content {
-    padding: 40px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-input {
-    padding: 8px;
-    width: 80%;
-    max-width: 300px;
-}
-
+/* Footer */
 footer {
-    background: #041E42;
-    color: white;
-    padding: 10px;
+    background: var(--unf-blue);
+    color: var(--unf-white);
+    padding: 15px;
     margin-top: 20px;
 }
