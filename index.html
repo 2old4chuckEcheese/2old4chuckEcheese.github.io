@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>UNF Ospreys Baseball Alumni</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- Header & Navigation -->
     <header>
-        <h1>My Awesome Website</h1>
+        <div class="logo">
+            <img src="images/unf-logo.png" alt="UNF Ospreys Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,16 +22,26 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <h2>Welcome to My Website!</h2>
-        <p>This is a simple website made with HTML, CSS, and JavaScript.</p>
-        <button onclick="showAlert()">Click Me</button>
+        <h1>UNF Baseball Alumni Network</h1>
+        <p>Connecting Ospreys, Supporting the Future</p>
+        <a href="donate.html" class="cta-button">Support UNF Baseball</a>
     </section>
 
+    <!-- Twitter Feed Section -->
+    <section class="twitter-feed">
+        <h2>Latest from UNF Baseball</h2>
+        <a class="twitter-timeline" data-width="600" data-height="500" href="https://twitter.com/OspreyBSB?ref_src=twsrc%5Etfw">
+            Tweets by OspreyBSB
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2025 My Website. All Rights Reserved.</p>
+        <p>© 2025 UNF Baseball Alumni. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
